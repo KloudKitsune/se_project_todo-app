@@ -4,7 +4,7 @@ class Todo {
     this._templateElement = document.querySelector(selector);
   }
 
-  _setEventListerners() {
+  _setEventListeners() {
     this._todoDeleteBtn.addEventListener("click", () => {
       this._todoElement.remove();
     });
@@ -14,7 +14,7 @@ class Todo {
     });
   }
 
-  _selectDateEl() {
+  _renderDueDate() {
     const dueDate = new Date(this._data.date);
     if (!isNaN(dueDate)) {
       this._todoDate.textContent = `Due: ${dueDate.toLocaleString("en-US", {
@@ -46,8 +46,8 @@ class Todo {
     todoNameEl.textContent = this._data.name;
 
     this._generateCheckboxEl();
-    this._setEventListerners();
-    this._selectDateEl();
+    this._setEventListeners();
+    this._renderDueDate();
 
     return this._todoElement;
   }
