@@ -24,4 +24,4 @@ the main point of this project is to showcase more modern methods for javascript
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+https://kloudkitsune.github.io/se_project_todo-app/
