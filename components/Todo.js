@@ -1,11 +1,9 @@
-import TodoCounter from "./TodoCounter.js";
-
 class Todo {
-  constructor(data, selector, _handleCheck, _handleDelete) {
+  constructor(data, selector, handleCheck, handleDelete) {
     this._data = data;
     this._templateElement = document.querySelector(selector);
-    this._handleCheck = _handleCheck;
-    this._handleDelete = _handleDelete;
+    this._handleCheck = handleCheck;
+    this._handleDelete = handleDelete;
   }
 
   _setEventListeners() {
